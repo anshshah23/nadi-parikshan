@@ -1,0 +1,121 @@
+import { motion } from "framer-motion";
+import DJSNSSLogo from "../assets/Logo.jpg";
+import Nadi from "../assets/NadiMockup.png";
+import Background from "../assets/Home.png";
+
+const data = [
+  { src: DJSNSSLogo, alt: "NSS DJSCE Logo", link: "/" },
+];
+
+const Landing = () => {
+
+
+  return (
+    <div className="flex flex-col">
+      {/* Parallax Section */}
+      <motion.div
+        className="w-full min-h-screen flex flex-col md:flex-row items-center bg-contain bg-fixed"
+        style={{
+          backgroundImage: `url(${Background})`,
+          backgroundSize: "cover", // Ensures full coverage
+          backgroundPosition: "center", // Centers the background
+          backgroundAttachment: "fixed",
+        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <div className="absolute w-full h-full bg-black/40 backdrop-blur-sm flex flex-col items-center justify-center"></div>
+        <div className="w-full md:w-1/2 pt-20 md:py-0 min-h-1/2 md:min-h-screen flex flex-col items-center justify-center z-10">
+          <div className="flex flex-row justify-evenly items-center">
+            {data.map((d, idx) => (
+              <motion.a
+                key={idx}
+                href={d.link}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-black/40 bg-opacity-20 hover:bg-white/10 duration-300 rounded-full mx-1 md:mr-6 flex backdrop-blur-sm shadow-lg"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.2 }}
+              >
+                <img src={d.src} alt={d.alt} className="h-28 md:h-40 rounded-full" />
+              </motion.a>
+            ))}
+          </div>
+          <motion.h1
+            className="text-xl sm:text-3xl font-bold mx-2 mt-4 text-center text-white"
+            initial={{ y: -50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+          >
+            We are <strong className="md:text-5xl">Prakriti Wellness</strong>
+            <div className="w-full border-black my-5 border-b-4"></div>
+          </motion.h1>
+          <motion.p
+            className="text-md md:text-2xl text-center text-white"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+          >
+            Nadi Parikshan to find your Dosha, Yoga and Meditation to heal your mind and body, and much more. Join us in our journey to a healthier lifestyle.
+          </motion.p>
+        </div>
+        <div className=" w-full md:w-1/2 min-h-1/2 md:min-h-screen flex flex-col items-center pt-10 justify-center z-10">
+          <motion.img
+            src={Nadi}
+            alt="Nadi Parikshan"
+            className="h-60 md:h-full"
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.5 }}
+          />
+        </div>
+      </motion.div>
+      <motion.div
+        className="w-full flex flex-col items-center justify-center bg-white"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <h1 className="text-2xl md:text-5xl font-bold mx-2 mt-4 text-center text-black">
+          Our Services
+          <div className="w-full border-black my-5 border-b-4"></div>
+        </h1>
+        <div className="flex w-full flex-col md:flex-row items-center justify-evenly">
+          <div className="flex flex-col items-center justify-center">
+            <img src={Nadi} alt="Nadi Parikshan" className="h-60 md:h-80" />
+            <h2 className="text-xl md:text-3xl font-bold mx-2 mt-4 text-center text-black">
+              Nadi Parikshan
+            </h2>
+            <p className="text-md md:text-2xl text-center text-black">
+              Nadi Parikshan is an ancient Ayurvedic technique of diagnosing
+              illness or disease by reading the pulse of the patient.
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center">
+            <img src={Nadi} alt="Nadi Parikshan" className="h-60 md:h-80" />
+            <h2 className="text-xl md:text-3xl font-bold mx-2 mt-4 text-center text-black">
+              Yoga and Meditation
+            </h2>
+            <p className="text-md md:text-2xl text-center text-black">
+              Yoga and Meditation are ancient practices that help in healing
+              the mind and body.
+            </p>
+          </div>
+          <div className="flex flex-col items-center justify-center">
+            <img src={Nadi} alt="Nadi Parikshan" className="h-60 md:h-80" />
+            <h2 className="text-xl md:text-3xl font-bold mx-2 mt-4 text-center text-black">
+              Ayurvedic Diet
+            </h2>
+            <p className="text-md md:text-2xl text-center text-black">
+              Ayurvedic Diet is a diet plan based on the principles of Ayurveda.
+            </p>
+          </div>
+        </div>
+      </motion.div>
+    </div>
+  );
+};
+
+export default Landing;

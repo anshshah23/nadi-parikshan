@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  padding: 1em;
+  position: relative;
+  transition-duration: 300ms;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
+}
+
+.card:hover {
+  transition-duration: 150ms;
+}
+
+.card .glow {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
