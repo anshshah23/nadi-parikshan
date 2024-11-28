@@ -35,11 +35,9 @@ const Navbar = () => {
 
   const MenuLinks: MenuLink[] = [
     { id: 1, name: "Home", link: "" },
-    { id: 2, name: "Blogs", link: "blogs" },
-    { id: 3, name: "Events", link: "events" },
-    { id: 4, name: "Podcasts", link: "podcast" },
-    { id: 5, name: "Team", link: "team" },
-    { id: 6, name: "Contact", link: "contact" },
+    { id: 2, name: "About", link: "about" },
+    { id: 3, name: "Chat", link: "chat" },
+    { id: 4, name: "Contact", link: "contact" },
   ];
 
   const handleScroll = () => {
@@ -69,11 +67,11 @@ const Navbar = () => {
     <>
       <div className="flex flex-col justify-center items-center">
         <nav
-          className={`fixed top-0 mt-0 md:mt-4 w-full ${isOpen ? 'h-[100vh]' : ''} lg:max-w-4xl z-50 transition duration-300 lg:rounded-full ${isScrolled
-            ? 'bg-black/70 border-white/40 border-1 text-white shadow-md shadow-opacity-30 shadow-black backdrop-blur-md'
+          className={`fixed top-0 mt-0 md:mt-4 w-full ${isOpen ? 'h-[100vh]' : ''} md:max-w-max md:px-8 z-50 transition duration-300 lg:rounded-full ${isScrolled
+            ? 'bg-black/70 border-white/40 border-1 text-white shadow-md shadow-opacity-30 shadow-black backdrop-blur-sm'
             : `${isDarkMode
-              ? 'md:opacity-80 bg-black text-white backdrop-blur-md'
-              : 'md:opacity-80 bg-white text-black backdrop-blur-md'
+              ? 'md:opacity-80 bg-black/80 text-white backdrop-blur-md'
+              : 'md:opacity-80 bg-white/80 text-black backdrop-blur-md'
             }`
             }`}
         >

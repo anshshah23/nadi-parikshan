@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
 const Home = React.lazy(() => import("./pages/Landing"));
+const Chat = React.lazy(() => import("./pages/Chat"));
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <div className="w-full min-h-screen overflow-y-scroll">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/chat" element={<Chat />} />
             </Routes>
           </div>
         </Suspense>
