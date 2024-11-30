@@ -38,6 +38,7 @@ const Navbar = () => {
     { id: 2, name: "About", link: "about" },
     { id: 3, name: "Chat", link: "chat" },
     { id: 4, name: "Contact", link: "contact" },
+    { id: 5, name: "Past", link: "calendar" },
   ];
 
   const handleScroll = () => {
