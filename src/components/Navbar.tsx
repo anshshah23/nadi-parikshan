@@ -35,10 +35,9 @@ const Navbar = () => {
 
   const MenuLinks: MenuLink[] = [
     { id: 1, name: "Home", link: "" },
-    { id: 2, name: "About", link: "about" },
-    { id: 3, name: "Chat", link: "chat" },
-    { id: 4, name: "Contact", link: "contact" },
-    { id: 5, name: "Past", link: "calendar" },
+    { id: 2, name: "Chat", link: "chat" },
+    { id: 3, name: "Nadi Doctors", link: "doctors" },
+    { id: 4, name: "PreviousChats", link: "calendar" },
   ];
 
   const handleScroll = () => {

@@ -7,7 +7,8 @@ import ScrollToTop from "./components/ScrollToTop";
 
 const Home = React.lazy(() => import("./pages/Landing"));
 const Chat = React.lazy(() => import("./pages/Chat"));
-
+const Login = React.lazy(() => import("./components/LoginPage"));
+const Register = React.lazy(() => import("./components/RegisterPage"));
 const App = () => {
   return (
     <Router>
@@ -25,6 +26,8 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/chat" element={<Chat />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
             </Routes>
           </div>
         </Suspense>
