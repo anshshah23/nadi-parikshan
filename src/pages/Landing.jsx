@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import DJSNSSLogo from "../assets/Logo.jpg";
 import Nadi from "../assets/NadiMockup.png";
 import Background from "../assets/Home.png";
+import { CustomerReviews, Footer, Hero, PopularProducts, SuperQuality, Services, Subscribe, SpecialOffers } from "../sections";
+
 
 const data = [
   { src: DJSNSSLogo, alt: "NSS DJSCE Logo", link: "/" },
@@ -72,48 +74,30 @@ const Landing = () => {
           />
         </div>
       </motion.div>
-      <motion.div
-        className="w-full flex flex-col items-center justify-center bg-white"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <h1 className="text-2xl md:text-5xl font-bold mx-2 mt-4 text-center text-black">
-          Our Services
-          <div className="w-full border-black my-5 border-b-4"></div>
-        </h1>
-        <div className="flex w-full flex-col md:flex-row items-center justify-evenly">
-          <div className="flex flex-col items-center justify-center">
-            <img src={Nadi} alt="Nadi Parikshan" className="h-60 md:h-80" />
-            <h2 className="text-xl md:text-3xl font-bold mx-2 mt-4 text-center text-black">
-              Nadi Parikshan
-            </h2>
-            <p className="text-md md:text-2xl text-center text-black">
-              Nadi Parikshan is an ancient Ayurvedic technique of diagnosing
-              illness or disease by reading the pulse of the patient.
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src={Nadi} alt="Nadi Parikshan" className="h-60 md:h-80" />
-            <h2 className="text-xl md:text-3xl font-bold mx-2 mt-4 text-center text-black">
-              Yoga and Meditation
-            </h2>
-            <p className="text-md md:text-2xl text-center text-black">
-              Yoga and Meditation are ancient practices that help in healing
-              the mind and body.
-            </p>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src={Nadi} alt="Nadi Parikshan" className="h-60 md:h-80" />
-            <h2 className="text-xl md:text-3xl font-bold mx-2 mt-4 text-center text-black">
-              Ayurvedic Diet
-            </h2>
-            <p className="text-md md:text-2xl text-center text-black">
-              Ayurvedic Diet is a diet plan based on the principles of Ayurveda.
-            </p>
-          </div>
-        </div>
-      </motion.div>
+      <section className="xl:padding-l wide:padding-r padding-b">
+        <Hero />
+      </section>
+      <section className="padding">
+        <PopularProducts />
+      </section>
+      <section className="padding">
+        <SuperQuality />
+      </section>
+      <section className="padding-x py-10">
+        <Services />
+      </section>
+      <section className="padding">
+        <SpecialOffers />
+      </section>
+      <section className="padding bg-light-coral-pink">
+        <CustomerReviews />
+      </section>
+      <section className="padding-x sm:py-32 py-16 w-full">
+        <Subscribe />
+      </section>
+      <section className="padding-x bg-black padding-t pb-8">
+        <Footer />
+      </section>
     </div>
   );
 };
