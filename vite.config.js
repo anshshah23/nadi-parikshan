@@ -8,5 +8,5 @@ export default defineConfig({
     rollupOptions: {
       external: ['some-module']  // Replace 'some-module' with the actual problematic module
     }
-  }
+  },
 })
