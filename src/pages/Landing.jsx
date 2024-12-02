@@ -95,9 +95,6 @@ const Landing = () => {
       <section className="padding-x sm:py-32 py-16 w-full">
         <Subscribe />
       </section>
-      {/* <section className="padding-x bg-black padding-t pb-8">
-        <Footer />
-      </section> */}
     </div>
   );
 };
