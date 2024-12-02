@@ -35,7 +35,7 @@ const getIcon = (name) => {
 // Main Footer Component
 function FooterComponent() {
   return (
-    <Footer className="bg-blue-950 text-gray-300 rounded-none">
+    <Footer className="bg-gray-500 text-white-400 rounded-none">
       <div className="w-full">
         {/* Footer Top Section */}
         <div className="flex flex-col lg:flex-row justify-between gap-8 px-6 sm:px-12 py-10">
@@ -43,17 +43,16 @@ function FooterComponent() {
           <div className="lg:w-1/2">
             <FooterTitle
               className="text-xl sm:text-2xl md:text-3xl pb-3 font-extrabold text-gold"
-              title="Prakriti Wellness"
+              title="Nadi Parikshan"
             />
-            <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed">
-              Prakriti Wellness is a student-run initiative, to understand Nadi Parikshan, Yoga, and Meditation to heal your mind and body. Join us in our journey to a healthier lifestyle.
+            <p className="text-sm sm:text-base md:text-lg text-white-400 leading-relaxed">
+              Nadi Parikshan is a student-run initiative, to understand Nadi Parikshan, Yoga, and Meditation to heal your mind and body. Join us in our journey to a healthier lifestyle.
             </p>
             <div className="mt-5 text-sm sm:text-base md:text-lg text-white">
               <p>
-                📍 Address: DJSCE, Sector 5, Vile Parle West, Mumbai,
-                Maharashtra, India
+                📍 Address: Nirmal Jyoti, Rd Number 12, Jawahar Nagar, Goregaon West, Mumbai, Maharashtra 400104
               </p>
-              <p>📞 Contact: +91 81693 88352</p>
+              <p>📞 Contact: +91 8928797765</p>
             </div>
           </div>
 
@@ -108,7 +107,7 @@ function FooterComponent() {
         <div className="w-full bg-darkgray text-white px-4 sm:px-10 py-4 flex items-center justify-between">
           <FooterCopyright
             href="/"
-            by="Prakriti_Wellness"
+            by="Nadi_Parikshan"
             year={2024}
             className="text-xs sm:text-sm md:text-base"
           />

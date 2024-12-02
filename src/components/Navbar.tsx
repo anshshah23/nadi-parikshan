@@ -85,7 +85,7 @@ const Navbar = () => {
                     : `${isScrolled ? "text-white" : "text-black"}`
                 } font-bold items-center flex`}
               >
-                Prakriti<span className="text-gold pl-1"> Wellness</span>
+                Nadi<span className="text-gold pl-1"> Parikshan</span>
               </a>
             </div>
 

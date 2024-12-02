@@ -26,9 +26,9 @@ export const shoes = [
 ];
 
 export const statistics = [
-    { value: '1k+', label: 'Brands' },
-    { value: '500+', label: 'Shops' },
-    { value: '250k+', label: 'Customers' },
+    { value: '1k+', label: 'Wellness Plans Designed' },
+    { value: '1k+', label: 'Happy Clients Transformed' },
+    { value: '500+', label: 'Expert Recommendations Tailored' },
 ];
 
 export const products = [
@@ -77,13 +77,13 @@ export const reviews = [
         imgURL: customer1,
         customerName: 'Darshan Patel',
         rating: 4.0,
-        feedback: "Prakriti Wellness offers personalized treatments and diet plans based on your dosha, and it’s amazing! Their recommendations improved my energy and well-being significantly. Highly recommend for holistic health!"
+        feedback: "Nadi Parikshan offers personalized treatments and diet plans based on your dosha, and it’s amazing! Their recommendations improved my energy and well-being significantly. Highly recommend for holistic health!"
     },
     {
         imgURL: customer2,
         customerName: 'Charmi Mehta',
         rating: 4.5,
-        feedback: "Prakriti Wellness is fantastic for personalized, dosha-based health plans! Their tailored approach transformed my energy and overall wellness. Highly recommend for anyone seeking holistic care!"
+        feedback: "Nadi Parikshan is fantastic for personalized, dosha-based health plans! Their tailored approach transformed my energy and overall wellness. Highly recommend for anyone seeking holistic care!"
     }
 ];
 

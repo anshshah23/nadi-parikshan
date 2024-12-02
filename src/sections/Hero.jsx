@@ -23,10 +23,9 @@ const Hero = () => {
           </span>
         </h1>
         <p className=" font-montserrat text-slate-gray text-lg leading-8 mt-8 mb-14 sm:max-w-sm">
-          Explore our latest collections, find your perfect fit, and let your
-          feet lead the way.
+        Unlock your perfect path to wellness, embrace balance, and let your healthiest self shine.
         </p>
-        <Button label="Shop now" iconURL={arrowRight} />
+        <Button label="Explore" iconURL={arrowRight} />
         <div className="flex justify-start items-start flex-wrap w-full max-sm:my-10 mt-20 mb-20 gap-16">
           {statistics.map(stat => (
             <div key={stat.label}>
@@ -39,10 +38,10 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=' relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center -z-40'>
+      <div className=' relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-white-400 bg-cover bg-center -z-40'>
         <img src={bigShoeImg} alt="shoe collection" width={610} height={500} className=' object-contain relative z-10' />
 
-        <div className=' flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
+        {/* <div className=' flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
           {shoes.map((shoe) => (
             <div key={shoe}>
               <ShoeCard 
@@ -52,7 +51,7 @@ const Hero = () => {
               />
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
