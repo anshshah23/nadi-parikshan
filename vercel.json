@@ -4,7 +4,7 @@
     {
       "src": "package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "build" }
+      "config": { "distDir": "dist" }
     }
   ],
   "routes": [
@@ -15,10 +15,6 @@
     {
       "src": "/favicon.ico",
       "dest": "/favicon.ico"
-    },
-    {
-      "src": "/(chat|doctors|calendar)",
-      "dest": "/index.html"
     },
     {
       "src": "/(.*)",
