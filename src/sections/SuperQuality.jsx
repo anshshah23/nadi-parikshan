@@ -10,17 +10,14 @@ const SuperQuality = () => {
     >
       <div className=" max-lg:block flex flex-1 flex-col">
         <p className=" font-palanquin text-left text-4xl font-bold">
-          We Provide You{' '}
-          <span className=" text-apple-red font-bold">Super Quality</span> Shoes
+          We Deliver{' '}
+          <span className=" text-apple-red font-bold">Super Quality</span> Wellness Solutions
         </p>
         <p className=" my-4 lg:max-w-lg info-text">
-          At RunX, we take immense pride in providing high-quality shoes that
-          are built to elevate your running experience. Our shoes are
-          meticulously designed and crafted using premium materials to ensure
-          durability, comfort, and performance.
+        At Nadi Parikshan, we take pride in offering personalized health solutions designed to transform your well-being. Each plan is thoughtfully crafted with expert care, focusing on balance, vitality, and lasting results to help you thrive in every aspect of life.
         </p>
         <p className=" mt-6 lg:max-w-lg info-text">
-          Our dedication to detail and excellence ensures your satisfaction.
+        Our focus on innovation and personalized solutions ensures a transformative journey toward your well-being.
         </p>
         <div className="mt-11">
           <Button label="View Details" />

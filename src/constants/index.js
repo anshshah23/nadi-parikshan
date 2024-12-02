@@ -26,9 +26,9 @@ export const shoes = [
 ];
 
 export const statistics = [
-    { value: '1k+', label: 'Brands' },
-    { value: '500+', label: 'Shops' },
-    { value: '250k+', label: 'Customers' },
+    { value: '1k+', label: 'Wellness Plans Designed' },
+    { value: '1k+', label: 'Happy Clients Transformed' },
+    { value: '500+', label: 'Expert Recommendations Tailored' },
 ];
 
 export const products = [
@@ -57,13 +57,13 @@ export const products = [
 export const services = [
     {
         imgURL: truckFast,
-        label: "Free shipping",
-        subtext: "Enjoy seamless shopping with our complimentary shipping service."
+        label: "Free Personalized Guide",
+        subtext: "Get started with a complimentary wellness plan tailored just for you."
     },
     {
         imgURL: shieldTick,
-        label: "Secure Payment",
-        subtext: "Experience worry-free transactions with our secure payment options."
+        label: "Discover True Balance",
+        subtext: "Experience holistic wellness, personalized for your needs."
     },
     {
         imgURL: support,
@@ -75,15 +75,15 @@ export const services = [
 export const reviews = [
     {
         imgURL: customer1,
-        customerName: 'David Mitchell',
-        rating: 4.5,
-        feedback: "RunX shoes rock! Stylish edition, max comfort. Great for runs, support, traction. Awesome loyalty program. Highly recommend!"
+        customerName: 'Darshan Patel',
+        rating: 4.0,
+        feedback: "Nadi Parikshan offers personalized treatments and diet plans based on your dosha, and it’s amazing! Their recommendations improved my energy and well-being significantly. Highly recommend for holistic health!"
     },
     {
         imgURL: customer2,
-        customerName: 'Sarah Thompson',
+        customerName: 'Charmi Mehta',
         rating: 4.5,
-        feedback: "RunX surpassed expectations! Affordable with discounts. Trade-in and accessories? Fantastic. Lifelong RunX fan!"
+        feedback: "Nadi Parikshan is fantastic for personalized, dosha-based health plans! Their tailored approach transformed my energy and overall wellness. Highly recommend for anyone seeking holistic care!"
     }
 ];
 

@@ -6,24 +6,19 @@ const MenuLinks = [
   },
   {
     id: 2,
-    name: "About Us",
-    link: "about",
+    name: "Chat",
+    link: "chat",
   },
   {
     id: 3,
-    name: "Events",
-    link: "events",
+    name: "Nadi Doctors",
+    link: "doctors",
   },
   {
     id: 4,
-    name: "Team",
-    link: "team",
-  },
-  {
-    id: 5,
-    name: "Admin",
-    link: "admin",
-  },
+    name: "Previous Chats",
+    link: "calendar",
+  }
 ];
 
 export { MenuLinks };

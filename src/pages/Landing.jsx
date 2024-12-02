@@ -51,7 +51,7 @@ const Landing = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 1.5 }}
           >
-            We are <strong className="md:text-5xl">Prakriti Wellness</strong>
+            <strong className="md:text-5xl">Nadi Parikshan</strong>
             <div className="w-full border-black my-5 border-b-4"></div>
           </motion.h1>
           <motion.p
@@ -77,9 +77,9 @@ const Landing = () => {
       <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
-      <section className="padding">
+      {/* <section className="padding">
         <PopularProducts />
-      </section>
+      </section> */}
       <section className="padding">
         <SuperQuality />
       </section>

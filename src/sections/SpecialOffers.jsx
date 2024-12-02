@@ -18,22 +18,16 @@ const SpecialOffers = () => {
           <span className=" text-apple-red font-bold">Special</span> Offers
         </p>
         <p className=" my-4 lg:max-w-lg info-text break-words">
-          Experience the thrill of limited edition releases, exclusive loyalty
-          rewards, and seasonal discounts at RunX. Discover unique shoe models
-          in premium materials, earn points for discounts and early access, and
-          enjoy unbeatable prices on a wide range of running shoes.
+        Discover the joy of personalized wellness with exclusive benefits at Nadi Parikshan. Enjoy tailored health plans, loyalty rewards, and seasonal discounts designed to enhance your well-being. Explore unique treatments crafted for your dosha, earn points for additional perks, and access unbeatable value on a range of wellness solutions.
+        Start your journey with Nadi Parikshan and make the most of these incredible offers today!
+
         </p>
         <p className=" mt-6 lg:max-w-lg break-words info-text">
-          Join the RunX revolution and seize these incredible offers today!
+        "Join the Nadi Parikshan journey and embrace these exceptional offers today!"
         </p>
         <div className="mt-11 flex flex-wrap gap-4">
-          <Button label="Shop now" iconURL={arrowRight} />
-          <Button
-            label="Learn more"
-            backgroundColor="bg-white"
-            borderColor="border-apple-red"
-            textColor="text-slate-gray"
-          />
+          <Button label="Tell Me More" iconURL={arrowRight} />
+
         </div>
       </div>
     </section>
