@@ -30,7 +30,7 @@ const ChatbotPage: React.FC = () => {
         setInput("");
 
         try {
-            const response = await fetch("https://nadi-parikshan-1.onrender.com/chat", {
+            const response = await fetch("http://127.0.0.1:5000/chat", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ message: input }),
@@ -56,7 +56,7 @@ const ChatbotPage: React.FC = () => {
         }
 
         try {
-            const response = await fetch("https://nadi-parikshan-1.onrender.com/nadi_recommendations", {
+            const response = await fetch("http://127.0.0.1:5000/nadi_recommendations", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ nadi: nadiType, gender, age: ageGroup }),
