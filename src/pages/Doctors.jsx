@@ -165,9 +165,8 @@ const doctorsData = [
 ];
 
 
-
 const FindDoctors = () => {
-    const [currentLocation, setCurrentLocation] = useState({ lat: 19.076, lng: 72.8777 }); // Default to Mumbai
+    const [currentLocation, setCurrentLocation] = useState({ lat: 19.076, lng: 72.8777 }); // Default: Mumbai
     const [filteredDoctors, setFilteredDoctors] = useState(doctorsData);
 
     useEffect(() => {
@@ -195,57 +194,46 @@ const FindDoctors = () => {
     };
 
     return (
-        <div className="min-h-screen self-center flex flex-col items-center justify-center">
-            <h1 className="text-lg md:text-2xl">Find Doctors Near You</h1>
-            <button onClick={() => handleCityFilter("Mumbai")}>Mumbai</button>
-            {/* Add more city filters if needed */}
-            <div className="mt-20">
-                <LoadScript googleMapsApiKey="<AIzaSyCCrf9STNXVdiDNW4xaITjoXgBn-gv81Ok>">
-                    <GoogleMap
-                        mapContainerStyle={containerStyle}
-                        center={currentLocation}
-                        zoom={12}
-                    >
-                        {filteredDoctors.map((doctor, index) => (
-                            <Marker
-                                key={index}
-                                position={{ lat: doctor.Lat, lng: doctor.Lng }}
-                                title={doctor.Name}
-                            />
-                        ))}
-                    </GoogleMap>
-                </LoadScript>
+        <div className="min-h-screen flex flex-col items-center justify-center p-4">
+            <h1 className="text-2xl font-bold mb-4">Find Doctors Near You</h1>
+            <div className="mb-4">
+                <button
+                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
+                    onClick={() => handleCityFilter("Mumbai")}
+                >
+                    Mumbai
+                </button>
             </div>
-            <div style={{ marginTop: "20px" }}>
-                <h2 style={{ textAlign: "center", marginBottom: "20px" }}>Doctors List</h2>
-                <div style={{ display: "flex", flexWrap: "wrap", gap: "20px", justifyContent: "center" }}>
+
+            <LoadScript googleMapsApiKey="AIzaSyCCrf9STNXVdiDNW4xaITjoXgBn-gv81Ok">
+                <GoogleMap
+                    mapContainerStyle={containerStyle}
+                    center={currentLocation}
+                    zoom={12}
+                >
+                    {filteredDoctors.map((doctor, index) => (
+                        <Marker
+                            key={index}
+                            position={{ lat: doctor.Latitude, lng: doctor.Longitude }}
+                            title={doctor.Name}
+                        />
+                    ))}
+                </GoogleMap>
+            </LoadScript>
+
+            <div className="mt-10 w-full max-w-6xl">
+                <h2 className="text-xl font-semibold mb-6 text-center">Doctors List</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                     {filteredDoctors.map((doctor, index) => (
                         <div
                             key={index}
-                            style={{
-                                border: "1px solid #ddd",
-                                borderRadius: "10px",
-                                padding: "15px",
-                                width: "250px",
-                                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                                backgroundColor: "#fff",
-                            }}
+                            className="border rounded-xl p-4 shadow-md bg-white"
                         >
-                            <h3 style={{ margin: "10px 0", fontSize: "18px", color: "#333" }}>
-                                {doctor.Name}
-                            </h3>
-                            <p style={{ margin: "5px 0" }}>
-                                <strong>Address:</strong> {doctor.Address}
-                            </p>
-                            <p style={{ margin: "5px 0" }}>
-                                <strong>Timing:</strong> {doctor.Timing}
-                            </p>
-                            <p style={{ margin: "5px 0" }}>
-                                <strong>Fee:</strong> {doctor["Consultation Fee"]}
-                            </p>
-                            <p style={{ margin: "5px 0" }}>
-                                <strong>Experience:</strong> {doctor["Experience (Years)"]} years
-                            </p>
+                            <h3 className="text-lg font-bold text-gray-800 mb-2">{doctor.Name}</h3>
+                            <p><strong>Address:</strong> {doctor.Address}</p>
+                            <p><strong>Timing:</strong> {doctor.Timing}</p>
+                            <p><strong>Fee:</strong> {doctor["Consultation Fee"]}</p>
+                            <p><strong>Experience:</strong> {doctor["Experience (Years)"]} years</p>
                         </div>
                     ))}
                 </div>

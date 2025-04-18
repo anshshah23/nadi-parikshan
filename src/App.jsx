@@ -9,7 +9,7 @@ const Home = React.lazy(() => import("./pages/Landing"));
 const Chat = React.lazy(() => import("./pages/Chat"));
 const Login = React.lazy(() => import("./components/LoginPage"));
 const Register = React.lazy(() => import("./components/RegisterPage"));
-const DoctorFinder = React.lazy(() => import("./pages/Doctors"));
+const DoctorsPage = React.lazy(() => import("./pages/DoctorsPage"));
 const PreviousChats = React.lazy(() => import("./pages/Previous"));
 const App = () => {
   return (
@@ -29,7 +29,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/chat" element={<Chat />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/doctors" element={<DoctorFinder />} />
+              <Route path="/doctors" element={<DoctorsPage />} />
               <Route path="/register" element={<Register />} />
               <Route path="/calendar" element={<PreviousChats />} />
             </Routes>
